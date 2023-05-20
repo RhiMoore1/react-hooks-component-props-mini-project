@@ -1,8 +1,9 @@
-import logo from "../assets/logo.svg";
+//import logo from "../assets/logo.svg";
+
 
 const blogData = {
   name: "Underreacted",
-  image: logo,
+  image: "https://via.placeholder.com/215",
   about: "A blog about learning React",
   posts: [
     {
