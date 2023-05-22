@@ -10,16 +10,36 @@ import React from "react";
 // the image should also be accessible! Give it an alt attribute of "blog logo"
 // a <p> element, with the text for the blog passed in as a prop called about
 
-function About(props) {
-  console.log(props.image);
+function About({image="https://via.placeholder.com/215", about}) {
+  console.log({image});
   return (
     <>
       <aside>
-        {props.image ? <img src={props.image} alt="blog logo" /> : <img src="https://via.placeholder.com/215" alt="blog logo" />}
-        <p>{props.about}</p>
+        <img src={image} alt="blog logo"></img>
+        <p>{about}</p>
       </aside>
     </>
   );
 }
 
 export default About;
+
+
+
+
+
+
+
+
+
+// function About(props) {
+//   console.log(props.image);
+//   return (
+//     <>
+//       <aside>
+//         {props.image ? <img src={props.image} alt="blog logo" /> : <img src="https://via.placeholder.com/215" alt="blog logo" />}
+//         <p>{props.about}</p>
+//       </aside>
+//     </>
+//   );
+// }
